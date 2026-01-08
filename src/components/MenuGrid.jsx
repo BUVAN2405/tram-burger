@@ -1,0 +1,46 @@
+import React from 'react';
+import MenuCard from './MenuCard';
+import { MENU_DATA } from '../data/menuData';
+
+const MenuGrid = ({ activeCategory, onAddToCart }) => {
+    const categoryData = MENU_DATA.find(cat => cat.categoryId === activeCategory);
+
+    if (!categoryData) return (
+        <div className="text-white text-center py-20">Category not found</div>
+    );
+
+    return (
+        <section id="menu-section" className="py-12 bg-brand-dark min-h-screen">
+            <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="flex items-end justify-between mb-10">
+                    <div>
+                        <h2 className="text-3xl md:text-5xl font-bold text-white mb-2">
+                            {categoryData.categoryName}
+                        </h2>
+                        <p className="text-gray-400">
+                            {categoryData.items.length} tasty items available
+                        </p>
+                    </div>
+                    {/* Decorative line */}
+                    <div className="hidden md:block h-px bg-white/10 flex-grow ml-8 mb-4 relative overflow-hidden">
+                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-brand-orange to-transparent w-1/2 animate-shimmer" />
+                    </div>
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+                    {categoryData.items.map((item, index) => (
+                        <div
+                            key={item.id}
+                            className="animate-fade-in-up"
+                            style={{ animationDelay: `${index * 50}ms` }}
+                        >
+                            <MenuCard item={item} onAddToCart={onAddToCart} />
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </section>
+    );
+};
+
+export default MenuGrid;
