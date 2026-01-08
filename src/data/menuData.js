@@ -230,7 +230,7 @@ export const MENU_DATA = [
                 "name": "Karak Tea",
                 "description": "Strong spiced tea.",
                 "price": 2.00,
-                "image": "/images/drinks/karak.jpg",
+                "image": "/images/drinks/karak-tea.png",
                 "isViral": false,
                 "isSpicy": false
             },
@@ -239,7 +239,7 @@ export const MENU_DATA = [
                 "name": "Coffee Specials",
                 "description": "Barista special hot coffee.",
                 "price": 4.50,
-                "image": "https://gemini.google.com/share/591d5dbfb91e",
+                "image": "/images/drinks/coffee-specials.png",
                 "isViral": false,
                 "isSpicy": false
             },
@@ -248,7 +248,7 @@ export const MENU_DATA = [
                 "name": "Flavored Tea",
                 "description": "Assorted herbal and fruit teas.",
                 "price": 3.00,
-                "image": "/images/drinks/flavored-tea.jpg",
+                "image": "/images/drinks/flavored-tea.png",
                 "isViral": false,
                 "isSpicy": false
             }
@@ -263,7 +263,7 @@ export const MENU_DATA = [
                 "name": "Mojito",
                 "description": "Minty fresh lime soda.",
                 "price": 5.00,
-                "image": "/images/drinks/mojito.jpg",
+                "image": "/images/drinks/mojito.png",
                 "isViral": false,
                 "isSpicy": false
             },
@@ -272,7 +272,7 @@ export const MENU_DATA = [
                 "name": "Cold Coffee Specials",
                 "description": "Iced coffee blends.",
                 "price": 5.50,
-                "image": "/images/drinks/cold-coffee.jpg",
+                "image": "/images/drinks/cold-coffee.png",
                 "isViral": false,
                 "isSpicy": false
             },
@@ -281,7 +281,7 @@ export const MENU_DATA = [
                 "name": "Fresh Juices",
                 "description": "Seasonal fresh fruit juices.",
                 "price": 6.00,
-                "image": "/images/drinks/juice.jpg",
+                "image": "/images/drinks/fresh-juice.png",
                 "isViral": false,
                 "isSpicy": false
             }
