@@ -15,7 +15,7 @@ const Hero = () => {
                     Premium Fast Food
                 </span>
                 <h1 className="text-6xl md:text-8xl font-black text-white mb-6 tracking-tighter leading-tight drop-shadow-2xl">
-                    TRAM <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-orange to-red-600">BURGER</span>
+                   By TR <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-orange to-red-600">BURGER</span>
                 </h1>
                 <p className="text-xl md:text-3xl text-gray-300 mb-10 font-light tracking-wide max-w-2xl mx-auto">
                     Next Stop: Pure Flavor.

@@ -7,7 +7,7 @@ const Header = ({ cartCount, onToggleCart }) => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
                 <div className="flex items-center gap-2 group cursor-pointer">
                     <h1 className="text-3xl font-bold tracking-tighter text-white group-hover:scale-105 transition-transform">
-                        TRAM <span className="text-brand-orange">BURGER</span>
+                        By TR <span className="text-brand-orange">BURGER</span>
                     </h1>
                 </div>
 
