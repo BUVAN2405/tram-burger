@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import MenuCard from './MenuCard';
+import ProductModal from './ProductModal';
 import { MENU_DATA } from '../data/menuData';
 
-const MenuGrid = ({ activeCategory, onAddToCart }) => {
+const MenuGrid = ({ activeCategory }) => {
+    const [selectedItem, setSelectedItem] = useState(null);
     const categoryData = MENU_DATA.find(cat => cat.categoryId === activeCategory);
 
     if (!categoryData) return (
@@ -34,11 +36,19 @@ const MenuGrid = ({ activeCategory, onAddToCart }) => {
                             className="animate-fade-in-up"
                             style={{ animationDelay: `${index * 50}ms` }}
                         >
-                            <MenuCard item={item} onAddToCart={onAddToCart} />
+                            <MenuCard item={item} onClick={setSelectedItem} />
                         </div>
                     ))}
                 </div>
             </div>
+
+            {/* Product Modal */}
+            {selectedItem && (
+                <ProductModal
+                    item={selectedItem}
+                    onClose={() => setSelectedItem(null)}
+                />
+            )}
         </section>
     );
 };

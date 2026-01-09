@@ -1,15 +1,18 @@
 import React from 'react';
 import { X, Plus, Minus, Trash2, ArrowRight } from 'lucide-react';
+import { useCart } from '../context/CartContext';
 
-const CartSidebar = ({
-    isOpen,
-    onClose,
-    cartItems,
-    updateQuantity,
-    removeItem,
-    orderType
-}) => {
-    const total = cartItems.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+const CartSidebar = ({ orderType }) => {
+    const {
+        isCartOpen: isOpen,
+        closeCart: onClose,
+        cartItems,
+        updateQuantity,
+        removeFromCart: removeItem
+    } = useCart();
+
+    // Use finalPrice from item which includes addons
+    const total = cartItems.reduce((sum, item) => sum + (item.finalPrice * item.quantity), 0);
 
     return (
         <>
@@ -71,7 +74,7 @@ const CartSidebar = ({
                         </div>
                     ) : (
                         cartItems.map(item => (
-                            <div key={item.id} className="flex gap-4 p-4 bg-gray-900/50 rounded-xl border border-white/5 hover:border-brand-orange/30 transition-all group">
+                            <div key={item.uniqueId} className="flex gap-4 p-4 bg-gray-900/50 rounded-xl border border-white/5 hover:border-brand-orange/30 transition-all group">
                                 {/* Image Thumbnail */}
                                 <div className="w-20 h-20 rounded-lg overflow-hidden bg-gray-800 flex-shrink-0 border border-white/5">
                                     <img
@@ -87,21 +90,29 @@ const CartSidebar = ({
 
                                 <div className="flex-1 flex flex-col justify-between">
                                     <div className="flex justify-between items-start gap-2">
-                                        <h4 className="font-bold text-white text-sm leading-tight line-clamp-2">{item.name}</h4>
-                                        <p className="font-bold text-brand-orange shrink-0">AED {(item.price * item.quantity).toFixed(2)}</p>
+                                        <div className="flex flex-col">
+                                            <h4 className="font-bold text-white text-sm leading-tight line-clamp-2">{item.name}</h4>
+                                            {/* Show addons */}
+                                            {item.selectedAddons && item.selectedAddons.length > 0 && (
+                                                <p className="text-xs text-gray-400 mt-1">
+                                                    + {item.selectedAddons.map(a => a.name).join(', ')}
+                                                </p>
+                                            )}
+                                        </div>
+                                        <p className="font-bold text-brand-orange shrink-0">AED {(item.finalPrice * item.quantity).toFixed(2)}</p>
                                     </div>
 
                                     <div className="flex justify-between items-end mt-3">
                                         <div className="flex items-center bg-black/40 rounded-lg p-1 border border-white/10">
                                             <button
-                                                onClick={() => updateQuantity(item.id, -1)}
+                                                onClick={() => updateQuantity(item.uniqueId, -1)}
                                                 className="w-7 h-7 flex items-center justify-center rounded bg-white/5 hover:bg-white/20 text-white transition-colors"
                                             >
                                                 <Minus size={14} />
                                             </button>
                                             <span className="text-sm font-bold w-8 text-center text-white">{item.quantity}</span>
                                             <button
-                                                onClick={() => updateQuantity(item.id, 1)}
+                                                onClick={() => updateQuantity(item.uniqueId, 1)}
                                                 className="w-7 h-7 flex items-center justify-center rounded bg-white/5 hover:bg-white/20 text-white transition-colors"
                                             >
                                                 <Plus size={14} />
@@ -109,7 +120,7 @@ const CartSidebar = ({
                                         </div>
 
                                         <button
-                                            onClick={() => removeItem(item.id)}
+                                            onClick={() => removeItem(item.uniqueId)}
                                             className="p-2 text-gray-500 hover:text-red-500 hover:bg-red-500/10 rounded-lg transition-all"
                                             title="Remove item"
                                         >
@@ -144,7 +155,7 @@ const CartSidebar = ({
                         disabled={cartItems.length === 0}
                         onClick={() => alert('Order Placed! The kitchen is cooking...')}
                     >
-                        Generic Checkout
+                        Checkout
                         <ArrowRight size={20} />
                     </button>
                 </div>

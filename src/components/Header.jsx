@@ -1,7 +1,9 @@
 import React from 'react';
 import { ShoppingBag } from 'lucide-react';
+import { useCart } from '../context/CartContext';
 
-const Header = ({ cartCount, onToggleCart }) => {
+const Header = () => {
+    const { cartCount, toggleCart } = useCart();
     return (
         <header className="sticky top-0 z-50 bg-brand-dark/95 backdrop-blur-md border-b border-white/10 shadow-lg transition-all duration-300">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
@@ -12,7 +14,7 @@ const Header = ({ cartCount, onToggleCart }) => {
                 </div>
 
                 <button
-                    onClick={onToggleCart}
+                    onClick={toggleCart}
                     className="relative p-2 text-white hover:text-brand-orange transition-colors group"
                 >
                     <ShoppingBag size={28} className="group-hover:drop-shadow-[0_0_8px_rgba(255,107,0,0.5)] transition-all" />

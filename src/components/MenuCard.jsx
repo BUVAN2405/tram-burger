@@ -1,9 +1,12 @@
 import React from 'react';
 import { Plus, Flame, Sparkles } from 'lucide-react';
 
-const MenuCard = ({ item, onAddToCart }) => {
+const MenuCard = ({ item, onClick }) => {
     return (
-        <div className="group relative bg-[#1a1a1a] rounded-2xl overflow-hidden border border-white/5 hover:border-brand-orange/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl flex flex-col h-full">
+        <div
+            onClick={() => onClick(item)}
+            className="group relative bg-[#1a1a1a] rounded-2xl overflow-hidden border border-white/5 hover:border-brand-orange/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl flex flex-col h-full cursor-pointer"
+        >
             {/* Badges */}
             <div className="absolute top-3 left-3 z-10 flex gap-2">
                 {item.isViral && (
@@ -48,11 +51,10 @@ const MenuCard = ({ item, onAddToCart }) => {
                 </p>
 
                 <button
-                    onClick={() => onAddToCart(item)}
-                    className="w-full bg-white text-black font-bold py-3 rounded-xl flex items-center justify-center gap-2 hover:bg-brand-orange hover:text-white transition-all duration-300 active:scale-95"
+                    className="w-full bg-white text-black font-bold py-3 rounded-xl flex items-center justify-center gap-2 group-hover:bg-brand-orange group-hover:text-white transition-all duration-300"
                 >
                     <Plus size={18} />
-                    Add to Cart
+                    View Details
                 </button>
             </div>
         </div>
