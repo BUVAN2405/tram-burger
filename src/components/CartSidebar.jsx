@@ -88,7 +88,7 @@ const CartSidebar = ({
                                 <div className="flex-1 flex flex-col justify-between">
                                     <div className="flex justify-between items-start gap-2">
                                         <h4 className="font-bold text-white text-sm leading-tight line-clamp-2">{item.name}</h4>
-                                        <p className="font-bold text-brand-orange shrink-0">${(item.price * item.quantity).toFixed(2)}</p>
+                                        <p className="font-bold text-brand-orange shrink-0">AED {(item.price * item.quantity).toFixed(2)}</p>
                                     </div>
 
                                     <div className="flex justify-between items-end mt-3">
@@ -127,15 +127,15 @@ const CartSidebar = ({
                     <div className="space-y-2">
                         <div className="flex justify-between text-gray-400 text-sm">
                             <span>Subtotal</span>
-                            <span>${total.toFixed(2)}</span>
+                            <span>AED {total.toFixed(2)}</span>
                         </div>
                         <div className="flex justify-between text-gray-400 text-sm">
                             <span>Tax (5%)</span>
-                            <span>${(total * 0.05).toFixed(2)}</span>
+                            <span>AED {(total * 0.05).toFixed(2)}</span>
                         </div>
                         <div className="flex justify-between items-end pt-2 border-t border-white/10">
                             <span className="text-lg font-bold text-white">Total</span>
-                            <span className="text-3xl font-bold text-brand-orange">${(total * 1.05).toFixed(2)}</span>
+                            <span className="text-3xl font-bold text-brand-orange">AED {(total * 1.05).toFixed(2)}</span>
                         </div>
                     </div>
 

@@ -1,239 +1,277 @@
 export const MENU_DATA = [
     {
-        "categoryId": "beef",
-        "categoryName": "Beef Burgers",
-        "items": [
+        categoryId: "chicken",
+        categoryName: "Chicken Burgers",
+        items: [
             {
-                "id": 101,
-                "name": "Raman Ham Burger",
-                "description": "Angus Beef, Double Cheddar Cheese, Tram Sauce, Tomato Sauce, Lolo Biando, Onion, Tomato.",
-                "price": 16.00,
-                "image": "/images/beef/raman-ham.png",
-                "isViral": true,
-                "isSpicy": false
+                id: 1,
+                name: "Regular by TR",
+                description: "Fried Chicken, Bun, Cheddar Cheese, Signature Sauce, Mayo, Lolo Biando, Caramalised Onion, Tomato",
+                price: 10.0,
+                image: "/images/chicken/tram-classic.png",
+                isViral: false,
+                isSpicy: false
             },
             {
-                "id": 102,
-                "name": "Sivama BBQ",
-                "description": "Smoky flavor Angus Beef Patty, Double Bacon, Cheddar Cheese, Tram Sauce, Tomato Sauce, Lolo Biando.",
-                "price": 17.50,
-                "image": "/images/beef/sivama-bbq.png",
-                "isViral": true,
-                "isSpicy": false
+                id: 2,
+                name: "Premium by TR",
+                description: "Fresh Chicken Patty, Bun, Cheddar Cheese, Signature Sauce, Mayo, Lolo biando, Caramalised Onion, Tomato",
+                price: 15.0,
+                image: "/images/chicken/duluxe.png",
+                isViral: true,
+                isSpicy: false
             },
             {
-                "id": 103,
-                "name": "TR Square Burger",
-                "description": "Triple patty Angus Beef, Double Cheddar Cheese, Tram Sauce, Tomato Sauce, Lolo Biando.",
-                "price": 20.00,
-                "image": "/images/beef/tr-square.png",
-                "isViral": true,
-                "isSpicy": false
+                id: 3,
+                name: "Supreme by TR",
+                description: "Double Fresh Chicken Patty, Bun, Double Cheddar Cheese, Signature Sauce, Mayo, Lolo biando, Caramalised Onion, Tomato, Cucumber Pickle",
+                price: 25.0,
+                image: "/images/chicken/duluxe.png",
+                isViral: false,
+                isSpicy: false
             },
             {
-                "id": 104,
-                "name": "Taco Beef",
-                "description": "Premium Vegan Tortilla wrap, Angus ground beef, Double Cheddar, Capsicum, Tram Sauce, Mayo.",
-                "price": 12.00,
-                "image": "/images/beef/taco-beef.png",
-                "isViral": true,
-                "isSpicy": true
+                id: 21,
+                name: "Tortilla PREMIUM Sandwich",
+                description: "Delicious Tortilla Sandwich",
+                price: 10.0,
+                image: "/images/chicken/tortilla-sandwich.png",
+                isViral: false,
+                isSpicy: false
             },
             {
-                "id": 105,
-                "name": "Smash Burger",
-                "description": "Classic smashed patty with crispy edges and juicy center.",
-                "price": 12.00,
-                "image": "/images/beef/smash.png",
-                "isViral": false,
-                "isSpicy": false
+                id: 1101,
+                name: "By TR Strips (5pc)",
+                description: "5 pieces of crispy chicken strips",
+                price: 10.0,
+                image: "/images/chicken/tortilla-sandwich.png",
+                isViral: false,
+                isSpicy: false
+            },
+            {
+                id: 1102,
+                name: "By TR Strips (12pc)",
+                description: "12 pieces of crispy chicken strips",
+                price: 20.0,
+                image: "/images/chicken/tortilla-sandwich.png",
+                isViral: false,
+                isSpicy: false
             }
         ]
     },
     {
-        "categoryId": "chicken",
-        "categoryName": "Chicken Burgers",
-        "items": [
+        categoryId: "beef",
+        categoryName: "Beef Burgers",
+        items: [
             {
-                "id": 201,
-                "name": "Duluxe Fried Chicken Burger",
-                "description": "Special Fried Chicken, Cheddar Cheese, Tram Sauce, Mayo, Lolo Biando, Onion, Tomato.",
-                "price": 14.00,
-                "image": "/images/chicken/duluxe.png",
-                "isViral": true,
-                "isSpicy": false
+                id: 4,
+                name: "Smash Beef by TR",
+                description: "Smash Fresh Beef Patty, Bacon, Bun, Cheddar Cheese, Signature Sauce, BBQ Sauce, Lolo Bianado, Caramalised Onion and Tomato",
+                price: 20.0,
+                image: "/images/beef/smash.png",
+                isViral: true,
+                isSpicy: false
             },
             {
-                "id": 202,
-                "name": "Tram Burger",
-                "description": "Classic Chicken patty, Cheddar Cheese, Tram Sauce, Mayo, Lolo Biando, Onion, Tomato.",
-                "price": 12.00,
-                "image": "/images/chicken/tram-classic.png",
-                "isViral": true,
-                "isSpicy": false
-            },
-            {
-                "id": 203,
-                "name": "Atman Spicy Burger",
-                "description": "Spicy Chicken patty, Cheddar Cheese, Tram Sauce, Mayo, Lolo Biando, Onion, Tomato.",
-                "price": 13.50,
-                "image": "/images/chicken/atman-spicy.png",
-                "isViral": true,
-                "isSpicy": true
-            },
-            {
-                "id": 204,
-                "name": "Shoso Cheetos Burger",
-                "description": "Chicken patty infused with American Cheetos crunch, Cheddar Cheese, Tram Sauce.",
-                "price": 15.00,
-                "image": "/images/chicken/shoso-cheetos.png",
-                "isViral": true,
-                "isSpicy": true
-            },
-            {
-                "id": 205,
-                "name": "Magans Peri Peri Burger",
-                "description": "Chicken patty with Peri Peri sauce, American Cheetos, Cheddar Cheese, Tram Sauce.",
-                "price": 14.50,
-                "image": "/images/chicken/magans-peri.png",
-                "isViral": true,
-                "isSpicy": true
-            },
-            {
-                "id": 206,
-                "name": "Tortilla Sandwich",
-                "description": "Fried Chicken strips, American Cheetos, Cheddar Cheese, Tram Sauce, Mayo.",
-                "price": 13.00,
-                "image": "/images/chicken/tortilla-sandwich.png",
-                "isViral": true,
-                "isSpicy": false
-            },
-            {
-                "id": 207,
-                "name": "Paari Cheese Infusing Burger",
-                "description": "A cheese lover's delight with molten cheese infusion.",
-                "price": 13.00,
-                "image": "/images/chicken/paari-cheese.png",
-                "isViral": false,
-                "isSpicy": false
-            }
-        ]
-    },
-
-    {
-        "categoryId": "ice_cream",
-        "categoryName": "Ice Creams",
-        "items": [
-            {
-                "id": 401,
-                "name": "Dragon Fruit Ice Cream",
-                "description": "Exotic homemade dragon fruit blend.",
-                "price": 7.00,
-                "image": "/images/icecream/dragon-fruit.png",
-                "isViral": false,
-                "isSpicy": false
-            },
-            {
-                "id": 402,
-                "name": "Avocado Ice Cream",
-                "description": "Creamy rich avocado scoops.",
-                "price": 7.50,
-                "image": "/images/icecream/avocado.png",
-                "isViral": false,
-                "isSpicy": false
-            },
-            {
-                "id": 403,
-                "name": "Mango Ice Cream",
-                "description": "Fresh tropical mango taste.",
-                "price": 6.00,
-                "image": "/images/icecream/mango.png",
-                "isViral": false,
-                "isSpicy": false
-            },
-            {
-                "id": 404,
-                "name": "Strawberry Ice Cream",
-                "description": "Classic strawberry sweetness.",
-                "price": 6.00,
-                "image": "/images/icecream/strawberry.png",
-                "isViral": false,
-                "isSpicy": false
-            },
-            {
-                "id": 405,
-                "name": "Coconut Ice Cream",
-                "description": "Tropical coconut refreshment.",
-                "price": 6.50,
-                "image": "/images/icecream/coconut.jpg",
-                "isViral": false,
-                "isSpicy": false
+                id: 5,
+                name: "VIP Beef by TR",
+                description: "Double Smash Fresh Beef Patty, Bacon, Bun, Cheddar Cheese, Signature Sauce, BBQ Sauce, Lolo Bianado, Caramalised Onion, Tomato, cucumber Pickle",
+                price: 30.0,
+                image: "/images/beef/raman-ham.png",
+                isViral: false,
+                isSpicy: false
             }
         ]
     },
     {
-        "categoryId": "hot_drinks",
-        "categoryName": "Hot Drinks",
-        "items": [
+        categoryId: "veg",
+        categoryName: "Vegetarian",
+        items: [
             {
-                "id": 501,
-                "name": "Karak Tea",
-                "description": "Strong spiced tea.",
-                "price": 2.00,
-                "image": "/images/drinks/img-karak.png",
-                "isViral": false,
-                "isSpicy": false
-            },
-            {
-                "id": 502,
-                "name": "Coffee Specials",
-                "description": "Barista special hot coffee.",
-                "price": 4.50,
-                "image": "/images/drinks/img-coffee.png",
-                "isViral": false,
-                "isSpicy": false
-            },
-            {
-                "id": 503,
-                "name": "Flavored Tea",
-                "description": "Assorted herbal and fruit teas.",
-                "price": 3.00,
-                "image": "/images/drinks/img-tea.png",
-                "isViral": false,
-                "isSpicy": false
+                id: 22,
+                name: "Veg Burger",
+                description: "Delicious vegetable patty burger",
+                price: 10.0,
+                image: "/images/beef/taco-beef.png",
+                isViral: false,
+                isSpicy: false
             }
         ]
     },
     {
-        "categoryId": "cold_drinks",
-        "categoryName": "Cold Drinks",
-        "items": [
+        categoryId: "specials",
+        categoryName: "Special Combos",
+        items: [
             {
-                "id": 601,
-                "name": "Mojito",
-                "description": "Minty fresh lime soda.",
-                "price": 5.00,
-                "image": "/images/drinks/img-mojito.png",
-                "isViral": false,
-                "isSpicy": false
+                id: 19,
+                name: "by TR to you Premium",
+                description: "Homemade I/Cream (Any flavour) + Premium by TR + 2 pcs Strips + Fries",
+                price: 30.0,
+                image: "/images/chicken/duluxe.png",
+                isViral: true,
+                isSpicy: false
             },
             {
-                "id": 602,
-                "name": "Cold Coffee Specials",
-                "description": "Iced coffee blends.",
-                "price": 5.50,
-                "image": "/images/drinks/img-cold-coffee.png",
-                "isViral": false,
-                "isSpicy": false
+                id: 20,
+                name: "by TR to you Smash Beef",
+                description: "Homemade I/Cream (Any flavour) + Smash Beef by TR + 2 pcs Strips + Fries",
+                price: 35.0,
+                image: "/images/beef/smash.png",
+                isViral: true,
+                isSpicy: false
+            }
+        ]
+    },
+    {
+        categoryId: "sides",
+        categoryName: "Sides & Extras",
+        items: [
+            {
+                id: 1001,
+                name: "Fries (Medium)",
+                description: "Crispy golden fries",
+                price: 7.0,
+                image: "/images/chicken/shoso-cheetos.png",
+                isViral: false,
+                isSpicy: false
             },
             {
-                "id": 603,
-                "name": "Fresh Juices",
-                "description": "Seasonal fresh fruit juices.",
-                "price": 6.00,
-                "image": "/images/drinks/img-juice.png",
-                "isViral": false,
-                "isSpicy": false
+                id: 1002,
+                name: "Fries (Large)",
+                description: "Large portion of crispy fries",
+                price: 11.0,
+                image: "/images/chicken/shoso-cheetos.png",
+                isViral: false,
+                isSpicy: false
+            },
+            {
+                id: 6,
+                name: "With Spicy",
+                description: "Add a spicy kick",
+                price: 2.0,
+                image: "/images/chicken/atman-spicy.png",
+                isViral: false,
+                isSpicy: true
+            },
+            {
+                id: 7,
+                name: "Extra Cheese",
+                description: "Add extra cheddar cheese",
+                price: 3.0,
+                image: "/images/chicken/paari-cheese.png",
+                isViral: false,
+                isSpicy: false
+            },
+            {
+                id: 8,
+                name: "Extra Sauce",
+                description: "Add extra signature sauce",
+                price: 4.0,
+                image: "/images/drinks/img-coffee.png",
+                isViral: false,
+                isSpicy: false
+            },
+            {
+                id: 9,
+                name: "Bun",
+                description: "Extra bun",
+                price: 2.0,
+                image: "/images/chicken/tram-classic.png",
+                isViral: false,
+                isSpicy: false
+            },
+            {
+                id: 999,
+                name: "Make it a Combo",
+                description: "Add Fries and Drink to your meal",
+                price: 7.0,
+                image: "/images/drinks/img-mojito.png",
+                isViral: false,
+                isSpicy: false
+            }
+        ]
+    },
+    {
+        categoryId: "drinks",
+        categoryName: "Drinks",
+        items: [
+            {
+                id: 12,
+                name: "Pepsi / Cola / Dew",
+                description: "Chilled soft drinks",
+                price: 5.0,
+                image: "/images/drinks/img-mojito.png",
+                isViral: false,
+                isSpicy: false
+            },
+            {
+                id: 13,
+                name: "Watermelon Mojito",
+                description: "Fresh Watermelon Mojito",
+                price: 5.0,
+                image: "/images/drinks/img-juice.png",
+                isViral: false,
+                isSpicy: false
+            }
+        ]
+    },
+    {
+        categoryId: "ice_cream",
+        categoryName: "Ice Creams",
+        items: [
+            {
+                id: 1401,
+                name: "Vanilla Ice Cream",
+                description: "Classic Vanilla",
+                price: 5.0,
+                image: "/images/icecream/dragon-fruit.png",
+                isViral: false,
+                isSpicy: false
+            },
+            {
+                id: 1402,
+                name: "Chocolate Ice Cream",
+                description: "Rich Chocolate",
+                price: 8.0,
+                image: "/images/icecream/dragon-fruit.png",
+                isViral: false,
+                isSpicy: false
+            },
+            {
+                id: 1403,
+                name: "Mixed Ice Cream",
+                description: "Vanilla and Chocolate Mix",
+                price: 7.0,
+                image: "/images/icecream/dragon-fruit.png",
+                isViral: false,
+                isSpicy: false
+            },
+            {
+                id: 16,
+                name: "Strawberry",
+                description: "Fresh Strawberry Delight",
+                price: 10.0,
+                image: "/images/icecream/strawberry.png",
+                isViral: false,
+                isSpicy: false
+            },
+            {
+                id: 17,
+                name: "Avocado",
+                description: "Creamy Avocado",
+                price: 10.0,
+                image: "/images/icecream/avocado.png",
+                isViral: false,
+                isSpicy: false
+            },
+            {
+                id: 18,
+                name: "Coconut",
+                description: "Tropical Coconut",
+                price: 10.0,
+                image: "/images/icecream/coconut.jpg",
+                isViral: false,
+                isSpicy: false
             }
         ]
     }

@@ -39,7 +39,7 @@ const MenuCard = ({ item, onAddToCart }) => {
                         {item.name}
                     </h3>
                     <span className="text-lg font-bold text-brand-orange whitespace-nowrap">
-                        ${item.price.toFixed(2)}
+                        AED {item.price.toFixed(2)}
                     </span>
                 </div>
 
