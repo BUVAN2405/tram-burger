@@ -13,7 +13,7 @@ export default {
       },
       colors: {
         'brand-dark': '#0f0f0f',
-        'brand-orange': '#ff6b00',
+        'brand-orange': '#e05e00',
         'brand-gray': '#1a1a1a',
       }
     },

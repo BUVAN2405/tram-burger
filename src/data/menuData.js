@@ -119,57 +119,7 @@ export const MENU_DATA = [
             }
         ]
     },
-    {
-        "categoryId": "breakfast",
-        "categoryName": "Breakfast",
-        "items": [
-            {
-                "id": 301,
-                "name": "Tortilla Sandwiches",
-                "description": "Light morning wrap with fresh ingredients.",
-                "price": 9.00,
-                "image": "/images/breakfast/tortilla.png",
-                "isViral": false,
-                "isSpicy": false
-            },
-            {
-                "id": 302,
-                "name": "French Toast with Fruits",
-                "description": "Classic French toast topped with seasonal fresh fruits.",
-                "price": 10.00,
-                "image": "/images/breakfast/french-toast.png",
-                "isViral": false,
-                "isSpicy": false
-            },
-            {
-                "id": 303,
-                "name": "Sourdough Bread Sandwich",
-                "description": "Toasted sourdough with healthy fillings.",
-                "price": 11.00,
-                "image": "/images/breakfast/sourdough.png",
-                "isViral": false,
-                "isSpicy": false
-            },
-            {
-                "id": 304,
-                "name": "Egg & Bacon Sandwich",
-                "description": "Classic breakfast staple.",
-                "price": 12.00,
-                "image": "/images/breakfast/egg-bacon.png",
-                "isViral": false,
-                "isSpicy": false
-            },
-            {
-                "id": 305,
-                "name": "Oats Bowls",
-                "description": "Healthy oats with honey and nuts.",
-                "price": 8.00,
-                "image": "/images/breakfast/oats.png",
-                "isViral": false,
-                "isSpicy": false
-            }
-        ]
-    },
+
     {
         "categoryId": "ice_cream",
         "categoryName": "Ice Creams",
