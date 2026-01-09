@@ -80,7 +80,6 @@ export const MENU_DATA = [
                     { id: 101, name: "Spicy", price: 2.0 },
                     { id: 102, name: "Extra Cheese", price: 3.0 },
                     { id: 103, name: "Extra Sauce", price: 4.0 },
-                    { id: 104, name: "Extra Bun", price: 2.0 }
                 ]
             },
             {
@@ -96,7 +95,6 @@ export const MENU_DATA = [
                     { id: 101, name: "Spicy", price: 2.0 },
                     { id: 102, name: "Extra Cheese", price: 3.0 },
                     { id: 103, name: "Extra Sauce", price: 4.0 },
-                    { id: 104, name: "Extra Bun", price: 2.0 }
                 ]
             },
             {
@@ -112,7 +110,6 @@ export const MENU_DATA = [
                     { id: 101, name: "Spicy", price: 2.0 },
                     { id: 102, name: "Extra Cheese", price: 3.0 },
                     { id: 103, name: "Extra Sauce", price: 4.0 },
-                    { id: 104, name: "Extra Bun", price: 2.0 }
                 ]
             }
         ]
@@ -134,7 +131,6 @@ export const MENU_DATA = [
                     { id: 101, name: "Spicy", price: 2.0 },
                     { id: 102, name: "Extra Cheese", price: 3.0 },
                     { id: 103, name: "Extra Sauce", price: 4.0 },
-                    { id: 104, name: "Extra Bun", price: 2.0 }
                 ]
             },
             {
@@ -150,7 +146,6 @@ export const MENU_DATA = [
                     { id: 101, name: "Spicy", price: 2.0 },
                     { id: 102, name: "Extra Cheese", price: 3.0 },
                     { id: 103, name: "Extra Sauce", price: 4.0 },
-                    { id: 104, name: "Extra Bun", price: 2.0 }
                 ]
             }
         ]

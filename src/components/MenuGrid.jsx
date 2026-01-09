@@ -12,14 +12,14 @@ const MenuGrid = ({ activeCategory }) => {
     );
 
     return (
-        <section id="menu-section" className="py-12 bg-brand-dark min-h-screen">
+        <section id="menu-section" className="py-8 md:py-12 bg-brand-dark min-h-screen">
             <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex items-end justify-between mb-10">
+                <div className="flex items-end justify-between mb-6 md:mb-10">
                     <div>
                         <h2 className="text-3xl md:text-5xl font-bold text-white mb-2">
                             {categoryData.categoryName}
                         </h2>
-                        <p className="text-gray-400">
+                        <p className="text-sm md:text-base text-gray-400">
                             {categoryData.items.length} tasty items available
                         </p>
                     </div>
@@ -29,7 +29,7 @@ const MenuGrid = ({ activeCategory }) => {
                     </div>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
                     {categoryData.items.map((item, index) => (
                         <div
                             key={item.id}

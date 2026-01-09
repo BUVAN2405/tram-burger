@@ -6,9 +6,9 @@ const Header = () => {
     const { cartCount, toggleCart } = useCart();
     return (
         <header className="sticky top-0 z-50 bg-brand-dark/95 backdrop-blur-md border-b border-white/10 shadow-lg transition-all duration-300">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 md:h-20 flex items-center justify-between">
                 <div className="flex items-center gap-2 group cursor-pointer">
-                    <h1 className="text-3xl font-bold tracking-tighter text-white group-hover:scale-105 transition-transform">
+                    <h1 className="text-xl md:text-3xl font-bold tracking-tighter text-white group-hover:scale-105 transition-transform">
                         By TR <span className="text-brand-orange">BURGER</span>
                     </h1>
                 </div>
@@ -17,9 +17,9 @@ const Header = () => {
                     onClick={toggleCart}
                     className="relative p-2 text-white hover:text-brand-orange transition-colors group"
                 >
-                    <ShoppingBag size={28} className="group-hover:drop-shadow-[0_0_8px_rgba(255,107,0,0.5)] transition-all" />
+                    <ShoppingBag size={24} className="md:w-7 md:h-7 group-hover:drop-shadow-[0_0_8px_rgba(255,107,0,0.5)] transition-all" />
                     {cartCount > 0 && (
-                        <span className="absolute -top-1 -right-1 inline-flex items-center justify-center w-5 h-5 text-xs font-bold text-white bg-brand-orange rounded-full border-2 border-brand-dark animate-pulse-slow">
+                        <span className="absolute -top-1 -right-1 inline-flex items-center justify-center w-4 h-4 md:w-5 md:h-5 text-[10px] md:text-xs font-bold text-white bg-brand-orange rounded-full border-2 border-brand-dark animate-pulse-slow">
                             {cartCount}
                         </span>
                     )}

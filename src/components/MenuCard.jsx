@@ -22,7 +22,7 @@ const MenuCard = ({ item, onClick }) => {
             </div>
 
             {/* Image Container */}
-            <div className="relative h-48 overflow-hidden bg-gray-900">
+            <div className="relative h-40 md:h-48 overflow-hidden bg-gray-900">
                 <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a] to-transparent z-10 opacity-60" />
                 <img
                     src={item.image}
@@ -36,24 +36,24 @@ const MenuCard = ({ item, onClick }) => {
             </div>
 
             {/* Content */}
-            <div className="p-5 flex flex-col flex-grow relative z-20">
+            <div className="p-4 md:p-5 flex flex-col flex-grow relative z-20">
                 <div className="flex justify-between items-start gap-2 mb-2">
-                    <h3 className="text-xl font-bold text-white leading-tight group-hover:text-brand-orange transition-colors">
+                    <h3 className="text-lg md:text-xl font-bold text-white leading-tight group-hover:text-brand-orange transition-colors">
                         {item.name}
                     </h3>
-                    <span className="text-lg font-bold text-brand-orange whitespace-nowrap">
+                    <span className="text-base md:text-lg font-bold text-brand-orange whitespace-nowrap">
                         AED {item.price.toFixed(2)}
                     </span>
                 </div>
 
-                <p className="text-gray-400 text-sm mb-6 line-clamp-2 flex-grow font-light">
+                <p className="text-gray-400 text-xs md:text-sm mb-4 md:mb-6 line-clamp-2 flex-grow font-light">
                     {item.description}
                 </p>
 
                 <button
-                    className="w-full bg-white text-black font-bold py-3 rounded-xl flex items-center justify-center gap-2 group-hover:bg-brand-orange group-hover:text-white transition-all duration-300"
+                    className="w-full bg-white text-black font-bold py-2 md:py-3 rounded-xl flex items-center justify-center gap-2 group-hover:bg-brand-orange group-hover:text-white transition-all duration-300 text-sm md:text-base"
                 >
-                    <Plus size={18} />
+                    <Plus size={16} className="md:w-[18px] md:h-[18px]" />
                     View Details
                 </button>
             </div>
